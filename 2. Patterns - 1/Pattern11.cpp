@@ -1,0 +1,18 @@
+/* For n = 3
+   A B C
+   A B C
+   A B C */
+
+#include<iostream>
+using namespace std;
+int main(){
+    int n;
+    cout<< "Enter The Number: ";
+    cin>> n;
+    for(int row = 1; row <= n; row++){
+        for(int col = 1; col <= n; col++){
+            cout<< (char)('A' + col - 1) << " ";
+        }
+        cout<<endl;
+    }
+}
